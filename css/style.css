@@ -2,35 +2,35 @@
   font-family: "Philosopher";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/philosopher/philosopheregular.ttf") format("ttf")
+  src: url("../fonts/philosopher/philosopheregular.ttf") format("ttf");
  }
 
  @font-face {
   font-family: "Philosopher";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/philosopher/philosopheritalic.ttf") format("ttf")
+  src: url("../fonts/philosopher/philosopheritalic.ttf") format("ttf");
  }
 
  @font-face {
   font-family: "Geometria";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/geometria/geometriamedium.otf") format("otf")
+  src: url("../fonts/geometria/geometriamedium.otf") format("otf");
  }
 
  @font-face {
   font-family: "Geometria";
   font-style: normal;
   font-weight: 800;
-  src: url("../fonts/geometria/geometriabold.otf") format("otf")
+  src: url("../fonts/geometria/geometriabold.otf") format("otf");
  }
 
  @font-face {
   font-family: "Geometria";
   font-style: normal;
   font-weight: 800;
-  src: url("../fonts/geometria/geometriabolditalic.otf") format("otf")
+  src: url("../fonts/geometria/geometriabolditalic.otf") format("otf");
  }
 
 
