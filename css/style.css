@@ -2,14 +2,21 @@
   font-family: "Philosopher";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/philosopher/philosopheregular.ttf") format("truerype");
+  src: url("../fonts/philosopher/philosopheregular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Philosopher";
   font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/philosopher/philosopherbold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Philosopher";
+  font-style: italic;
   font-weight: 400;
-  src: url("../fonts/philosopher/philosopheritalic.ttf") format("truerype");
+  src: url("../fonts/philosopher/philosopheritalic.ttf") format("truetype");
 }
 
 @font-face {
@@ -33,6 +40,12 @@
   src: url("../fonts/geometria/geometriabolditalic.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/geometria/geometriaextrablackitalic.otf") format("opentype");
+}
 
 body {
  	
@@ -112,8 +125,8 @@ body {
 .commercial__text {
 	display: block;
 	position: absolute;
-	top: 50px;
-	left: 30px;
+	top: 62px;
+	left: 20px;
 	color: #000000;
 	font-family: "Geometria";
 	font-size: 20px;
@@ -146,20 +159,19 @@ body {
 
 .main-title {
 	display: none;
-	width: 1045px;
-    height: 157px;
-    color: #ffffff;
+	color: #ffffff;
     font-family: "Philosopher";
     font-size: 140px;
     font-weight: 400;
+    font-style: normal;
     letter-spacing: 50.4px;
     text-transform: uppercase;
 }
 
 .tagline {
 	position: absolute;
-	top: 207px;
-	left: 20px;
+	top: 155px;
+	left: -18px;
 	color: #000000;
     font-family: "Philosopher";
     font-size: 9px;
@@ -170,19 +182,30 @@ body {
     z-index: 100;
 }
 
+.big-bear {
+	position: absolute;
+	right: -75px;
+	top: -179px;
+	transform: rotate(-270deg);
+	z-index: 0;
+}
+
 .affinage-special {
 	position: absolute;
 	left: 70px;
-	top: 57px;
-	width: 190px;
-	height: 160px;
+	top: 60px;
+	width: 185px;
+	height: 138px;
 }
 
 .affinage-special__wrap {
 	position: relative;
+	width: 185px;
+	height: 138px;
 }
 
 .affinage-special__element {
+	display: block;
 	position: absolute;
 	font-family: "Geometria";
 	font-size: 60px;
@@ -191,16 +214,28 @@ body {
 	color: #000000;
 }
 
-.gallery {
-	width: 320px;
-	height: 485px;
+.affinage-special__element:first-of-type {
+	bottom: -20px;
+	left: 0;
+	z-index: 500;
 }
 
-.gallery__wrap {
+.affinage-special__element:nth-of-type(2) {
+	bottom: -4px;
+	left: 77px;
+	z-index: 1;
+}
+
+.affinage-special__element:last-of-type {
+	top: -10px;
+	right: 0;
+	z-index: 1;
+}
+
+.gallery {
 	position: relative;
 	width: 320px;
 	height: 485px;
-	overflow: hidden;
 }
 
 .gallery__block {
@@ -227,6 +262,16 @@ body {
 
 .galler__block img {
 	display: block;
+}
+
+.gallery__block--back img {
+	width: 281px;
+	height: 185px;
+}
+
+.gallery__block--front img {
+	width: 559px;
+	height: 318px;
 }
 
 .gallery__block--back:after,
@@ -321,7 +366,39 @@ body {
 }
 
 .main-footer__info {
+	position: relative;
+	width: 320px;
+	height: 10px;
+}
+
+.main-footer__info--left-block {
 	display: none;
+}
+
+.main-footer__info--right-block {
+	display: block;
+}
+
+.main-footer__info--right-block span {
+	display: none;
+}
+
+.main-footer__info--right-block div {
+	display: block;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	z-index: 10;
+}
+
+.main-footer__info--right-block div:first-of-type {
+	bottom: 30px;
+	left: 44px;
+}
+
+.main-footer__info--right-block div:nth-of-type(2) {
+	bottom: 318px;
+	right: 28px;
 }
 
 @media (min-width: 1440px) {
@@ -337,18 +414,26 @@ body {
 		padding: 34px;
 	}
 
+	.main-block {
+		padding-left: 80px;
+		padding-right: 80px;
+		width: 1440px;
+	}
+
 	.main-title {
 		display: block;
-        
-	}
+		position: absolute;
+		z-index: 2000;
+    }
 
 	.bage-block {
 		display: block;
+		position: absolute;
 	}
 
 	.gallery {
-		top: 97px;
-		left: 80px;
+		width: 1280px;
+		height: 577px;
 	}
 
 	.gallery__block--back {
@@ -358,11 +443,22 @@ body {
 		height: 525px;
 	}
 
+	.gallery__block--back img {
+		width: 800px;
+		height: 525px;
+	}
+
 	.gallery__block--front {
 	    top: 87px;
 	    left: 420px;
 	    width: 860px;
         height: 490px;
+        transform: none;
+    }
+
+    .gallery__block--front img {
+    	width: 860px;
+    	height: 490px;
     }
 	
 }
