@@ -17,12 +17,14 @@ var images = [
 	}
 ];
 
-var rightHandle = document.querySelector('.control-panel__handler--right');
-var leftHandle = document.querySelector('.control-panel__handler--left');
+console.log(images);
+
+var rightHandler = document.querySelector('.control-panel__handler--right');
+var leftHandler = document.querySelector('.control-panel__handler--left');
 var backBlock = document.querySelector('.gallery__block--back img');
 var frontBlock = document.querySelector('.gallery__block--front img');
 
-rightHandle.addEvenListener('click', function () {
+rightHandler.addEvenListener('click', function () {
     var sweptPictureUrl = frontBlock.src;
     for (var i = 0; i < images.length; i++) {
     	if (sweptPictureUrl === images[i].url) {
