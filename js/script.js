@@ -17,8 +17,6 @@ var images = [
 	}
 ];
 
-console.log(images);
-
 var rightHandler = document.querySelector('.control-panel__handler--right');
 var leftHandler = document.querySelector('.control-panel__handler--left');
 var backBlock = document.querySelector('.gallery__block--back img');

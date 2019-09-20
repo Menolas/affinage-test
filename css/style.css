@@ -2,35 +2,35 @@
   font-family: "Philosopher";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/philosopher/philosopheregular.ttf") format("ttf");
+  src: url("../fonts/philosopher/philosopheregular.ttf") format("truerype");
 }
 
 @font-face {
   font-family: "Philosopher";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/philosopher/philosopheritalic.ttf") format("ttf");
+  src: url("../fonts/philosopher/philosopheritalic.ttf") format("truerype");
 }
 
 @font-face {
   font-family: "Geometria";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/geometria/geometriamedium.otf") format("otf");
+  src: url("../fonts/geometria/geometriamedium.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Geometria";
   font-style: normal;
   font-weight: 800;
-  src: url("../fonts/geometria/geometriabold.otf") format("otf");
+  src: url("../fonts/geometria/geometriabold.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Geometria";
   font-style: normal;
   font-weight: 800;
-  src: url("../fonts/geometria/geometriabolditalic.otf") format("otf");
+  src: url("../fonts/geometria/geometriabolditalic.otf") format("opentype");
 }
 
 
@@ -227,15 +227,16 @@ body {
 
 .galler__block img {
 	display: block;
-	position: relative;
 }
 
-.gallery__block--back img:after,
-.gallery__block--front img:after {
-	
+.gallery__block--back:after,
+.gallery__block--front:after {
+	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
+	width: 100%;
+	height: 100%;
 	background-color: #f7e611;
 	opacity: 0.8;
 	z-index: 1000;
