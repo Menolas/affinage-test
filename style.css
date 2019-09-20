@@ -1,0 +1,179 @@
+@font-face {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/philosopher/philosopheregular.ttf") format("ttf"),
+ }
+
+ @font-face {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/geometria/geometriamedium.otf") format("otf"),
+ }
+
+ body {
+ 	
+ 	background-color: #cccccc;
+ }
+
+.container {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 320px;
+	min-height: 568px;
+	background-color: #f7e611;
+}
+
+.main-header {
+	padding: 15px 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.toggle {
+	position: relative;
+	padding-top: 5px;
+}
+
+.toggle__element {
+	display: block;
+	width: 20px;
+	height: 2px;
+	background-color: #000000;
+}
+
+.toggle__element:before,
+.toggle__element:after {
+	content: "";
+	position: absolute;
+	right: 0;
+	width: 20px;
+	height: 2px;
+	background-color: #000000;
+}
+
+.toggle__element:before {
+	top: 11px;
+}
+
+.toggle__element:after {
+	top: 17px;
+}
+
+.bage-block {
+	display: none;
+	padding-top: 33px;
+	padding-left: 24px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 1px solid #000000;
+
+	color: #ffffff;
+    font-family: Geometria;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 2.14px;
+    text-transform: uppercase;
+}
+
+.main-title {
+	display: none;
+	width: 1045px;
+    height: 157px;
+    color: #ffffff;
+    font-family: "Philosopher";
+    font-size: 140px;
+    font-weight: 400;
+    letter-spacing: 50.4px;
+    text-transform: uppercase;
+}
+
+.affinage-special {
+	font-family: "Geometria";
+	font-size: 60px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.gallery {
+	position: absolute;
+	top: 83px;
+	left: 0;
+}
+
+.gallery__wrap {
+	position: relative;
+}
+
+.gallery__block {
+	position: absolute;
+	
+    background-color: #f7e611;
+    opacity: 0.8;
+}
+
+.gallery__block--back {
+	top: 0;
+	left: -45px;
+	right: 84px;
+	width: 281px;
+    height: 185px;
+}
+
+.gallery__block--front {
+	top: 167px;
+	
+	width: 559px;
+    height: 318px;
+}
+
+.main-footer__info {
+	display: none;
+}
+
+@media (min-width: 1440px) {
+	body {
+		min-width: 1440px;
+	}
+	.container {
+		width: 1440px;
+		background-color: #ffffff;
+	}
+
+	.main-header {
+		padding: 34px;
+	}
+
+	.main-title {
+		display: block;
+        
+	}
+
+	.bage-block {
+		display: block;
+	}
+
+	.gallery {
+		top: 97px;
+		left: 80px;
+	}
+
+	.gallery__block--back {
+		top: 0;
+	    left: 0;
+		width: 800px;
+		height: 525px;
+	}
+
+	.gallery__block--front {
+	    top: 87px;
+	    left: 420px;
+	    width: 860px;
+        height: 490px;
+    }
+	
+}
