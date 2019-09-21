@@ -22,7 +22,7 @@ var leftHandler = document.querySelector('.control-panel__handler--left');
 var backBlock = document.querySelector('.gallery__block--back img');
 var frontBlock = document.querySelector('.gallery__block--front img');
 
-rightHandler.addEvenListener('click', function () {
+rightHandler.addEventListener('click', function () {
     var sweptPictureUrl = frontBlock.src;
     for (var i = 0; i < images.length; i++) {
     	if (sweptPictureUrl === images[i].url) {
