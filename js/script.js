@@ -44,13 +44,13 @@ leftHandler.addEventListener('click', function () {
     var sweptPictureUrl = frontBlock.src;
     for (var i = 0; i < images.length; i++) {
     	if (images[i].url === sweptPictureUrl) {
-    		if (i = 0) {
-    			var j = 2;
-    		} else if (i > 0) {
-    		    j = i - 1;
+    		if (i > 0) {
+    			var j = i - 1;
+    		} else if (i == 0) {
+    		    j = 2;
     	    }
+    	    frontBlock.src = images[j].url;
     		backBlock.src = sweptPictureUrl;
-    		frontBlock.src = images[j].url;
     	}
     }
 });
