@@ -87,7 +87,6 @@ body {
 	width: 320px;
 	background-color: #f7e611;
 	overflow: hidden;
-	z-index: -100;
 }
 
 .main-header {
@@ -324,14 +323,14 @@ body {
     width: 283px;
 	height: 37px;
 	transform: translate(-50%);
-	z-index: 2000;
+	z-index: 5;
 }
 
 .control-panel__handler {
-	position: relative;
 	width: 21px;
 	height: 37px;
 	cursor: pointer;
+	z-index: 1000;
 }
 
 .control-panel__handler span {
