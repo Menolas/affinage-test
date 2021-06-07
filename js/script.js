@@ -3,17 +3,17 @@
 var images = [
 	{
 		alt: 'some picture',
-		url: 'file:///Users/elena/affinage-test/img/photo-1.jpg'
+		url: '/img/photo-1.jpg'
 	},
 
 	{
         alt: 'some picture',
-		url: 'file:///Users/elena/affinage-test/img/photo-2.jpg'
+		url: '/img/photo-2.jpg'
 	},
 
 	{
         alt: 'some picture',
-		url: 'file:///Users/elena/affinage-test/img/photo-3.jpg'
+		url: '/img/photo-3.jpg'
 	}
 ];
 
