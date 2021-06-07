@@ -1,2 +1,5 @@
 # affinage-test
-testing task for affinage храню как пример дебильнейшего тестового задания
+
+## Description
+
+testing task for Affinage company - keeping it here as an example of most idiotic and head ache giving design ever
